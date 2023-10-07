@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 import profileLogo from '../assets/user.png'
@@ -6,9 +5,9 @@ import profileLogo from '../assets/user.png'
 const Navbar = () => {
 
     const navLinks = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/about'>About</NavLink></li>
-        <li><NavLink to='/career'>Career</NavLink></li>
+        <li className='text-2xl'><NavLink to='/'>Home</NavLink></li>
+        <li className='text-2xl'><NavLink to='/about'>About</NavLink></li>
+        <li className='text-2xl'><NavLink to='/career'>Career</NavLink></li>
 
 
 
@@ -39,7 +38,7 @@ const Navbar = () => {
                         <img src={profileLogo} />
                     </div>
                 </label>
-                <Link>
+                <Link to={'/login'}>
                     <button className='btn'>Login</button>
                 </Link>
             </div>
